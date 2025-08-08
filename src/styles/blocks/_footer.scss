@@ -1,0 +1,124 @@
+.footer {
+  @include content-padding-inline;
+
+  margin-top: 120px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  background-color: $footer-bg-color;
+  height: 1439px;
+
+  &__top {
+    padding-top: 72px;
+
+  &-title {
+    @extend %footer-h3;
+
+    margin: 0;
+  }
+}
+
+  &__form {
+    padding-top: 48px;
+    gap: 40px ;
+    display: flex;
+    flex-direction: column;
+    
+
+  &-input,
+  &-textarea {
+    background-color: $footer-bg-color;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    padding-bottom:   16px;
+    
+    &::placeholder {
+    @extend %footer-form-text;
+  }
+
+  &:focus {
+    border-bottom-color: #144ED4; 
+      }
+    }
+  }
+
+
+  &__contacts {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+ 
+  
+  &-title {
+    @extend %footer-contact-title;
+    padding-bottom: 48px;
+    margin: 0;
+    }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &-label {
+      @extend %footer-contact-label;
+      margin: 0;
+    
+   }
+
+  &-phone, 
+  &-link {
+    @extend %footer-contact-link; 
+   
+    padding-bottom: 40px;
+    }
+  }
+
+  &__social {
+    padding-top: 40px;
+  
+  &-title {
+    @extend %footer-socials;
+    
+    margin: 0;
+    padding-bottom: 16px;
+   }
+
+  &-icon {
+    display: flex;
+    gap: 32px;
+   }
+  }
+
+  &__logo {
+  padding-top: 80px;
+ 
+
+  &-img {
+    width: 46px;
+    height: 28px;
+  }
+ }
+ 
+  &__nav {
+     padding-top: 48px;
+     
+  &-list {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &-link {
+   @extend %footer-navigation;
+    
+   }
+  }
+} 

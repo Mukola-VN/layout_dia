@@ -1,0 +1,15 @@
+.page {
+  box-sizing: border-box;
+
+  scroll-behavior: smooth;
+  background-color: $page-color;
+
+  &__body {
+    margin: 0;
+    padding: 0;
+  }
+
+  html:target {
+    scroll-behavior: auto;
+  }
+}

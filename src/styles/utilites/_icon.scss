@@ -1,0 +1,31 @@
+.icon {
+  display: block;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+
+  &--menu {
+    background-image: url('../images/header/menu.png');
+    margin-right: 106px;
+  }
+  
+  &__footer {
+    width: 32px;
+    height: 32px;
+
+  &--facebook {
+    background-image: url('../images/icon/facebook-icon.png');
+  }
+
+  &--twitter {
+    background-image: url('../images/icon/twitter-icon.png');
+  }
+    
+  &--instagram {
+    background-image: url('../images/icon/instagram-icon.png');
+  }
+  }
+}

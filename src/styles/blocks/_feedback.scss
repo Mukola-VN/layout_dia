@@ -1,0 +1,88 @@
+.feedback {
+  @include content-padding-inline;
+
+  padding-top: 120px;
+
+  &__section--name {
+    @extend %feedback-section-name;
+  }
+
+  &__title {
+     @extend %feedback-title;
+  }
+  
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px; 
+  }
+  
+  &__card {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;       
+    text-align: center;
+    border-radius:16px;
+    width: 280px;
+    background-color: $white;
+  }
+
+  &__image {
+    padding-top: 32px;
+
+    width: 196px;
+    height: 196px;
+ 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+    &-first {
+      background-image: url(../images/feedback/Photo-1.png);
+    }
+
+    &-second {
+      background-image: url(../images/feedback/Photo-2.png);
+    }
+
+      &-third {
+      background-image: url(../images/feedback/Photo-3.png);
+    }
+  }
+
+  &__icon {
+
+    padding-top: 24px;
+    width: 24px;
+    height: auto;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-image: url(../images/icon/icon-feedback.png);
+  }
+
+  &__description {
+    @extend %feedback-description;
+
+    padding-top: 8px;
+    padding-bottom: 16px;
+    max-width: 196px;
+  }
+
+  &__name {
+
+  
+    @extend %feedback-name;
+
+    padding-bottom: 8px;
+  }
+ 
+  &__job {
+    @extend %feedback-job;
+
+    padding-bottom: 32px;
+  }
+}

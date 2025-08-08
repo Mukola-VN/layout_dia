@@ -1,0 +1,66 @@
+.expertise  {
+  @include content-padding-inline;
+
+  margin-top: 120px;
+ 
+  height: 1375px;
+   background-color: $white;
+   border-radius: 30px;
+ 
+
+  &__title {
+    @extend %expertise-title;
+
+    padding-top: 72px;
+    padding-bottom: 56px;
+    max-width: 280px;
+    margin: 0;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  &__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  }
+
+  &__image {
+    width: 166px;
+    height: 166px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+  &--branding {
+    background-image: url(../images/expertise/branding-img.png);
+  }
+
+  &--communication {
+    background-image: url(../images/expertise/communication-img.png);
+  }
+
+  &--strategy {
+    background-image: url(../images/expertise/strategy-img.png);
+  }
+ }
+
+  &__name {
+    @extend %expertise-name;
+
+    padding-top: 32px;
+  }
+ 
+  &__description {
+    @extend %expertise-text;
+
+    margin: 0;
+    padding-top: 16px;
+    padding-bottom: 56px;
+ }
+}
+

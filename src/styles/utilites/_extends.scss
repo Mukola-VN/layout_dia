@@ -1,0 +1,284 @@
+%h-1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 120%;
+  letter-spacing: -2px;
+  color: $white;
+}
+
+%cta-link {
+  @extend %h-1;
+
+  font-size: 13px;
+  line-height: 150%;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $white;
+}
+
+%subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-weight:400;
+  font-size: 18px;
+  line-height: 150%;
+  color: $white;
+}
+
+%button-text {
+font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: $white;
+}
+
+%intro-title {
+  @extend %button-text;
+  
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+%intro-text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0px;
+  color: $white;
+}
+
+// description
+%description-title {
+  @extend %h-1;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: 0;
+  text-align: center;
+  color: $h-color;
+}
+
+%description-text {
+  @extend %description-title;
+  
+  font-size: 22px;
+  color: $text-color;
+}
+
+
+// Our expertise
+
+%expertise-title {
+  @extend %h-1;
+
+  font-size: 44px;
+  line-height: 120%;
+  letter-spacing:0;
+  text-align: center;
+  color: $h-color;
+}
+
+%expertise-name {
+  @extend %h-1;
+
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0;
+  color: $h-color;
+}
+
+%expertise-text {
+  @extend %intro-text;
+
+  color: $text-color;
+}
+
+// services 
+%services-name {
+  @extend %h-1;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 3px;
+  text-align: left;
+  text-transform: uppercase;
+  color: $services-name-color;
+}
+
+%services-title {
+  @extend %h-1;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: 0;
+  color: $h-color;
+}
+
+%services-description {
+  @extend %intro-text;
+
+  line-height: 150%;
+  color: $text-color;
+}
+
+%services-box-text {
+   @extend %intro-text;
+
+   font-weight: 600;
+   font-size: 13px;
+   line-height: 150%;
+   letter-spacing: 0;
+   color: $text-color;
+}
+
+%services-number {
+  @extend %h-1;
+
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: $btn-color;
+  text-transform: uppercase;
+}
+
+%services-text {
+  @extend %intro-text;
+
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 150%;
+  color: $text-color;
+}
+
+%services-btn-text {
+  @extend %h-1;
+  font-size: 15;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: $services-btn;
+}
+
+// Feedback 
+%feedback-section-name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $feedback-name-color;
+}
+
+%feedback-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing:0;
+  color: $feedback-title-color;
+}
+
+%feedback-description {
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 600;
+   font-size: 13px;
+   line-height: 150%;
+   color: $feedback-text-color;
+}
+
+%feedback-name {
+  @extend %feedback-description;
+
+  color: $feedback-title-color;
+}
+
+%feedback-job {
+  @extend %feedback-section-name;
+
+  color: $feedback-name-color;
+}
+
+// vision
+%vision-title {
+  @extend %h-1;
+  font-size: 44px;
+  letter-spacing: 0;
+  color: $vision-title-color;
+   text-align: center;
+}
+
+%vision-text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 150%;
+  color: $vision-text-color;
+  text-align: center;
+}
+
+// Footer 
+%footer-h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: 0;
+    color: $white;
+}
+
+%footer-form-text {
+  @extend %footer-h3;
+  font-size: 15px;
+  line-height: 100%;
+
+}
+
+%footer-contact-title {
+    @extend %footer-h3;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+ %footer-contact-label {
+  @extend %footer-contact-title;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+ }
+
+ %footer-contact-link {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0;
+   text-decoration: none;
+  color: $white;
+}
+
+%footer-socials {
+@extend %footer-contact-title;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing:3px;
+  color: $white;
+}
+
+%footer-navigation {
+  @extend %footer-socials;
+  color: $white;
+  text-decoration: none;
+}
+
+

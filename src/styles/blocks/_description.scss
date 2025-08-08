@@ -1,0 +1,19 @@
+.description {
+  @include content-padding-inline;
+
+  padding-top: 120px;
+
+  &__title {
+    @extend %description-title;
+
+    margin: 0;
+    padding-bottom: 24px;
+
+  }
+
+  &__text {
+      @extend %description-text;
+
+      max-width: 280px;
+  }
+}
