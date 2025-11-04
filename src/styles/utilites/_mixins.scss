@@ -1,28 +1,26 @@
-@mixin on-large{
+@mixin on-large {
   @media (min-width: $large) {
     @content;
   }
 }
 
-@mixin on-design{
+@mixin on-design {
   @media (min-width: $design) {
     @content;
   }
 }
 
-@mixin on-desktop{
+@mixin on-desktop {
   @media (min-width: $desktop) {
     @content;
   }
 }
 
-
-@mixin on-tablet{
+@mixin on-tablet {
   @media (min-width: $tablet) {
     @content;
   }
 }
-
 
 @mixin content-padding-inline {
   padding-inline: 20px;
@@ -35,16 +33,14 @@
     padding-inline: 54px;
   }
 
-  @include on-design{
-    padding-inline:227px;
+  @include on-design {
+    padding-inline: 227px;
   }
 
-  @include on-large{
+  @include on-large {
     padding-inline: 707px;
   }
 }
-
-
 
 @mixin hover($_property, $_toValue) {
   transition: #{$_property} 0.3s;

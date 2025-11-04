@@ -9,23 +9,26 @@
 
   &--menu {
     background-image: url('../images/header/menu.png');
-    margin-right: 106px;
+    margin-right: 111px;
+    @include on-tablet {
+      margin-right: 389px;
+    }
   }
-  
+
   &__footer {
     width: 32px;
     height: 32px;
 
-  &--facebook {
-    background-image: url('../images/icon/facebook-icon.png');
-  }
+    &--facebook {
+      background-image: url('../images/icon/facebook-icon.png');
+    }
 
-  &--twitter {
-    background-image: url('../images/icon/twitter-icon.png');
-  }
-    
-  &--instagram {
-    background-image: url('../images/icon/instagram-icon.png');
-  }
+    &--twitter {
+      background-image: url('../images/icon/twitter-icon.png');
+    }
+
+    &--instagram {
+      background-image: url('../images/icon/instagram-icon.png');
+    }
   }
 }

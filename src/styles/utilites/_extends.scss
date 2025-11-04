@@ -1,15 +1,21 @@
 %h-1 {
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
   font-weight: 600;
   font-size: 52px;
   line-height: 120%;
   letter-spacing: -2px;
   color: $white;
+
+  @include on-tablet {
+    font-size: 64px;
+    line-height: 68px;
+  }
 }
 
 %cta-link {
   @extend %h-1;
 
+  font-weight: 700;
   font-size: 13px;
   line-height: 150%;
   letter-spacing: 3px;
@@ -19,14 +25,14 @@
 
 %subtitle {
   font-family: 'Open Sans', sans-serif;
-  font-weight:400;
+  font-weight: 400;
   font-size: 18px;
   line-height: 150%;
   color: $white;
 }
 
 %button-text {
-font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
   font-weight: 600;
   font-size: 15px;
   line-height: 100%;
@@ -36,7 +42,7 @@ font-family: "Poppins", sans-serif;
 
 %intro-title {
   @extend %button-text;
-  
+
   font-weight: 700;
   font-size: 13px;
   line-height: 100%;
@@ -49,13 +55,14 @@ font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   color: $white;
 }
 
 // description
 %description-title {
   @extend %h-1;
+
   font-size: 32px;
   line-height: 150%;
   letter-spacing: 0;
@@ -65,11 +72,14 @@ font-family: "Poppins", sans-serif;
 
 %description-text {
   @extend %description-title;
-  
+
   font-size: 22px;
   color: $text-color;
-}
 
+  @include on-tablet {
+    font-size: 24px;
+  }
+}
 
 // Our expertise
 
@@ -78,9 +88,14 @@ font-family: "Poppins", sans-serif;
 
   font-size: 44px;
   line-height: 120%;
-  letter-spacing:0;
+  letter-spacing: 0;
   text-align: center;
   color: $h-color;
+
+  @include on-tablet {
+    font-size: 52px;
+    line-height: 150%;
+  }
 }
 
 %expertise-name {
@@ -98,9 +113,10 @@ font-family: "Poppins", sans-serif;
   color: $text-color;
 }
 
-// services 
+// services
 %services-name {
   @extend %h-1;
+
   font-weight: 700;
   font-size: 13px;
   line-height: 100%;
@@ -112,6 +128,7 @@ font-family: "Poppins", sans-serif;
 
 %services-title {
   @extend %h-1;
+
   font-weight: 600;
   font-size: 32px;
   line-height: 130%;
@@ -127,13 +144,13 @@ font-family: "Poppins", sans-serif;
 }
 
 %services-box-text {
-   @extend %intro-text;
+  @extend %intro-text;
 
-   font-weight: 600;
-   font-size: 13px;
-   line-height: 150%;
-   letter-spacing: 0;
-   color: $text-color;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: $text-color;
 }
 
 %services-number {
@@ -157,15 +174,16 @@ font-family: "Poppins", sans-serif;
 
 %services-btn-text {
   @extend %h-1;
+
   font-size: 15;
   line-height: 100%;
   letter-spacing: 0;
   color: $services-btn;
 }
 
-// Feedback 
+// Feedback
 %feedback-section-name {
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
   font-weight: 700;
   font-size: 13px;
   line-height: 100%;
@@ -175,20 +193,20 @@ font-family: "Poppins", sans-serif;
 }
 
 %feedback-title {
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
   font-weight: 600;
   font-size: 32px;
   line-height: 150%;
-  letter-spacing:0;
+  letter-spacing: 0;
   color: $feedback-title-color;
 }
 
 %feedback-description {
-   font-family: 'Open Sans', sans-serif;
-   font-weight: 600;
-   font-size: 13px;
-   line-height: 150%;
-   color: $feedback-text-color;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 150%;
+  color: $feedback-text-color;
 }
 
 %feedback-name {
@@ -206,10 +224,11 @@ font-family: "Poppins", sans-serif;
 // vision
 %vision-title {
   @extend %h-1;
+
   font-size: 44px;
   letter-spacing: 0;
   color: $vision-title-color;
-   text-align: center;
+  text-align: center;
 }
 
 %vision-text {
@@ -221,64 +240,67 @@ font-family: "Poppins", sans-serif;
   text-align: center;
 }
 
-// Footer 
+// Footer
 %footer-h3 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 130%;
-    letter-spacing: 0;
-    color: $white;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: 0;
+  color: $white;
 }
 
 %footer-form-text {
   @extend %footer-h3;
+
   font-size: 15px;
   line-height: 100%;
-
+  color: $white;
 }
 
 %footer-contact-title {
-    @extend %footer-h3;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 150%;
-    letter-spacing: 0;
-    text-transform: uppercase;
+  @extend %footer-h3;
+
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: 0;
+  text-transform: uppercase;
 }
 
- %footer-contact-label {
+%footer-contact-label {
   @extend %footer-contact-title;
+
   font-size: 13px;
   font-weight: 700;
   line-height: 100%;
   letter-spacing: 3px;
   text-transform: uppercase;
- }
+}
 
- %footer-contact-link {
+%footer-contact-link {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 150%;
   letter-spacing: 0;
-   text-decoration: none;
+  text-decoration: none;
   color: $white;
 }
 
 %footer-socials {
-@extend %footer-contact-title;
+  @extend %footer-contact-title;
+
   font-size: 13px;
   font-weight: 700;
   line-height: 100%;
-  letter-spacing:3px;
+  letter-spacing: 3px;
   color: $white;
 }
 
 %footer-navigation {
   @extend %footer-socials;
+
   color: $white;
   text-decoration: none;
 }
-
-

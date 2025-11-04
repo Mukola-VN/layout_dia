@@ -3,15 +3,25 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  max-width: 100%; // На мобільних - повна ширина
   height: 50px;
   background-color: $btn-color;
   border-radius: 8px;
   border: none;
+  transition: all 0.3s ease;
   cursor: pointer;
 
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  @include on-tablet {
+    max-width: 264px;
+  }
 
   &-text {
     @extend %button-text;
+
     text-align: center;
   }
 }
