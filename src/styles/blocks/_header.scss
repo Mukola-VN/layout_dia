@@ -131,8 +131,8 @@
 
   .swiper-button-prev,
   .swiper-button-next {
-    position: static ;
-  
+    position: static;
+
     width: 32px;
     height: 32px;
     cursor: pointer;
@@ -149,7 +149,6 @@
     @include on-tablet {
       margin-left: 70px;
     }
-
   }
 
   &__intro {

@@ -5,7 +5,6 @@
 
   @include on-tablet {
     margin-top: 148px;
-
   }
 
   &__top {
@@ -39,9 +38,9 @@
     flex-direction: column;
     gap: 10px;
 
-  @include on-tablet {
-    max-width: 264px;
-   }
+    @include on-tablet {
+      max-width: 264px;
+    }
   }
 
   &__bottom {
@@ -49,12 +48,12 @@
     flex-direction: column;
     gap: 24px;
 
-   @include on-tablet {
-    display:  grid;
-    grid-template-columns: repeat(6, 1fr);
-    
-    gap: 30px;
-    width: 100%;
+    @include on-tablet {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+
+      gap: 30px;
+      width: 100%;
     }
   }
 
@@ -63,50 +62,50 @@
     height: 264px;
     background-color: $white;
     border-radius: 16px;
-    // padding-left: 32px;
+
     box-shadow: 0 9px 18px 0 rgba(37, 41, 49, 0.03);
 
     @include on-tablet {
       width: 264px;
       height: 264px;
-      padding:0;
+      padding: 0;
     }
 
-  &--first {
-    grid-column: 1/4;
-  }
+    &--first {
+      grid-column: 1/4;
+    }
 
-  &--second {
-    grid-column: 1/4;
-  }
- 
-  &--third{
-   grid-column: 4/7;
-  }
+    &--second {
+      grid-column: 1/4;
+    }
 
-  &-fourth {
-   grid-column: 4/7;
-  }
+    &--third {
+      grid-column: 4/7;
+    }
 
-  &-order {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 46px;
-    height: 24px;
-    border-radius: 23px;
-    background-color: $page-color;
-   
-    margin: 32px 0 24px 32px;
-    cursor: pointer;
-  }
+    &-fourth {
+      grid-column: 4/7;
+    }
 
-  &-number {
-    @extend %services-number;
-  }
+    &-order {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 46px;
+      height: 24px;
+      border-radius: 23px;
+      background-color: $page-color;
 
-  &-text {
-    @extend %services-text;
+      margin: 32px 0 24px 32px;
+      cursor: pointer;
+    }
+
+    &-number {
+      @extend %services-number;
+    }
+
+    &-text {
+      @extend %services-text;
 
       max-width: 200px;
       padding-bottom: 32px;
@@ -120,7 +119,7 @@
     align-items: center;
     gap: 16px;
     text-decoration: none;
-     margin-left: 32px;
+    margin-left: 32px;
 
     &-icon {
       width: 40px;
