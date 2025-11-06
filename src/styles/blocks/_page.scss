@@ -1,6 +1,6 @@
 .page {
   box-sizing: border-box;
-
+  overflow-x: hidden;
   scroll-behavior: smooth;
   background-color: $page-color;
 

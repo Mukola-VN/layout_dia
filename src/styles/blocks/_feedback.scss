@@ -1,7 +1,11 @@
 .feedback {
   @include content-padding-inline;
 
-  padding-top: 120px;
+  margin-block: 120px;
+
+  @include on-tablet {
+    margin-top: 148px;
+  }
 
   &__section--name {
     @extend %feedback-section-name;
@@ -9,6 +13,13 @@
 
   &__title {
     @extend %feedback-title;
+
+    margin-top: 16px;
+    margin-bottom: 48px;
+
+    @include on-tablet {
+      margin-bottom: 56px;
+    }
   }
 
   &__container {
@@ -24,18 +35,30 @@
     text-align: center;
     border-radius: 16px;
     width: 280px;
+    height: 456px;
     background-color: $white;
+
+    @include on-tablet {
+      width: 558px;
+      height: auto;
+    }
   }
 
   &__image {
-    padding-top: 32px;
-
+    display: block;
     width: 196px;
     height: 196px;
+    margin-top: 32px;
+    margin-bottom: 24px;
 
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+
+    @include on-tablet {
+      width: 250px;
+      height: 250px;
+    }
 
     &-first {
       background-image: url(../images/feedback/Photo-1.png);
@@ -51,9 +74,8 @@
   }
 
   &__icon {
-    padding-top: 24px;
     width: 24px;
-    height: auto;
+    height: 24px;
 
     background-size: contain;
     background-repeat: no-repeat;
@@ -68,12 +90,16 @@
     padding-top: 8px;
     padding-bottom: 16px;
     max-width: 196px;
+
+    @include on-tablet {
+      max-width: 362px;
+    }
   }
 
   &__name {
     @extend %feedback-name;
 
-    padding-bottom: 8px;
+    padding-bottom: 4px;
   }
 
   &__job {

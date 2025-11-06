@@ -1,6 +1,10 @@
 .expertise {
   @include content-padding-inline;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   height: 1375px;
   margin: 0 auto;
 
@@ -26,11 +30,9 @@
     }
   }
 
-  &__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  // &__container {
+
+  // }
 
   &__item {
     display: flex;
