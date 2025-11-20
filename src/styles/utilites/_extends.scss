@@ -58,6 +58,14 @@
   letter-spacing: 0;
   color: $white;
 }
+// ASIDE
+  %aside-link {
+    @extend %cta-link;
+    
+    text-decoration: none;
+    font-size: 15px
+  }
+//
 
 // description
 %description-title {

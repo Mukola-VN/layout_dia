@@ -49,13 +49,11 @@
     flex-direction: column;
     justify-content: center;
     gap: 24px;
-
+    
     @include on-tablet {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
-
-      // gap: 30px;
-      width: 100%;
+      width: auto;
     }
   }
 
