@@ -1,9 +1,24 @@
 .header {
   background-color: $header-bg;
-  max-height: 870px;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+    
+   @include on-desktop {
+      display: grid;
+      position: relative;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      height: 800px;
+    }
 
   &__container {
     @include content-padding-inline;
+
+    @include on-desktop {
+      
+      grid-column: 1/6;
+    }
+
   }
 
   &__top-bar {
@@ -15,20 +30,52 @@
     padding-bottom: 48px;
 
     @include on-tablet {
-      padding-bottom: 56px;
+      padding-bottom: 56px; 
+    }
+
+    @include on-desktop {
+      padding-top: 48px;
+    
     }
   }
-
-  &__nav {
-    display: none;
-  }
-
+  
   &__logo {
     margin-right: 32px;
-
+    
     &-img {
       width: 46px;
       height: 28px;
+    }
+  }
+  
+  // HEADER NAVIGATION
+  &-nav {
+    display: none;
+
+    @include on-desktop {
+      display: flex;
+    }
+
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      white-space: nowrap;
+     
+      gap: 48px;
+      margin: 0;
+      padding-left: 136px;
+      padding-right: 10px;
+    }
+
+    &__item {
+      list-style: none;
+    }
+    
+    &__link {
+  
+      @extend %cta-link;
+
     }
   }
 
@@ -58,6 +105,11 @@
   }
 
   &__bottom {
+
+    @include on-desktop {
+    max-width: 490px;
+  }
+
     &-title {
       @extend %h-1;
 
@@ -68,6 +120,11 @@
       @include on-tablet {
         min-width: 558px;
         padding-bottom: 24px;
+      }
+
+      @include on-desktop {
+      min-width: 490px;
+      padding-block: 112px 32px;
       }
     }
 
@@ -91,6 +148,14 @@
       margin-top: 56px;
       margin-bottom: 147px;
     }
+
+    @include on-desktop {
+      margin-top: 83px;
+    }
+
+    @include on-desktop {
+      margin-bottom: 207px;
+    }
   }
 
   /* Swiper */
@@ -101,11 +166,22 @@
     overflow: hidden;
     z-index: 0;
 
+    @include on-desktop {
+      grid-column: 7/13;
+      width: 502px;
+      height: 680px;
+      align-self: end;
+    }
+
     &-wrapper {
       display: flex;
       width: 100%;
       height: 390px;
       transition: transform 0.3s ease-out;
+
+      @include on-desktop {
+        height: 100%;
+      }
     }
 
     &-nav {
@@ -128,8 +204,12 @@
       border-radius: 30px;
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       object-position: center;
+    }
+
+    @include on-desktop {
+     height: 680px;
     }
   }
 
@@ -153,6 +233,7 @@
     @include on-tablet {
       margin-left: 70px;
     }
+    
   }
 
   &__intro {

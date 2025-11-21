@@ -20,6 +20,7 @@
   line-height: 150%;
   letter-spacing: 3px;
   text-transform: uppercase;
+  text-decoration: none;
   color: $white;
 }
 
@@ -63,7 +64,8 @@
     @extend %cta-link;
     
     text-decoration: none;
-    font-size: 15px
+    font-size: 15px;
+    font-weight: 700;
   }
 //
 

@@ -31,6 +31,7 @@
 
   @include on-desktop {
     padding-inline: 54px;
+    padding-right: 0;
   }
 
   @include on-design {

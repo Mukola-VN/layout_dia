@@ -10,8 +10,13 @@
   &--menu {
     background-image: url('../images/header/menu.png');
     margin-right: 111px;
+
     @include on-tablet {
       margin-right: 389px;
+    }
+
+    @include on-desktop {
+      display: none;
     }
   }
 

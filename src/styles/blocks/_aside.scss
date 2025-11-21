@@ -32,34 +32,48 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 30px;
     list-style: none;
   }
 
   &__item {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     
   }
 
   &__link {
-    @extend %aside-link;
+  @extend %aside-link;
 
-    transition: all 0.3s ease;
-         background: linear-gradient(160deg, #c1a6f7, #037bfc, #0270d6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200%;
-     
-   &:hover {
-    font-size: 18px;
-    transform: translateX(1.1) ;
-   }
+  position: relative; 
+  display: inline-block; // важливо, щоб underline мав ширину елемента
+
+  transition: all 0.3s ease;
+    /* Плавний перехід від білого до м'якого фіолетового */
+background: linear-gradient(45deg, #FFFFFF 0%, #F3E5F5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -5px; // відступ під текстом
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #FFFFFF 0%, #05ffff 100%);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease;
   }
 
-  
-
+  &:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
   &__border {
     margin: 10px 20px;
    
