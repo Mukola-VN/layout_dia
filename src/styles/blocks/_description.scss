@@ -4,6 +4,7 @@
   @include on-desktop {
     padding-inline: 148px;
   }
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,8 +18,6 @@
     @include on-tablet {
       padding-block: 148px 16px;
     }
-
- 
   }
 
   &__text {
@@ -32,7 +31,6 @@
 
     @include on-desktop {
       min-width: 725px;
-      
     }
   }
 }

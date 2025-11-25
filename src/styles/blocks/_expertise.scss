@@ -1,13 +1,11 @@
 .expertise {
   @include content-padding-inline;
 
-  
   display: flex;
   flex-direction: column;
   align-items: center;
 
   margin: 0 auto;
-  
 
   border-radius: 30px;
   background-color: $white;
@@ -16,7 +14,6 @@
   @include on-tablet {
     margin-top: 148px;
   }
-
 
   &__title {
     @extend %expertise-title;
@@ -29,24 +26,20 @@
       padding-top: 128px;
       max-width: 558;
     }
-
-
   }
 
-  
   &__container {
-    padding-block: 56px 72px;
+    padding-top: 56px;
 
-  @include on-tablet {
-    padding-block: 64px 128px;
+    @include on-tablet {
+      padding-block: 64px 128px;
     }
 
-  @include on-desktop {
-    display: grid;
-    gap: 137px;
-    grid-template-columns: repeat(3, 1fr);
-   
-   }
+    @include on-desktop {
+      display: grid;
+      gap: 137px;
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   &__item {
@@ -54,15 +47,11 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-bottom: 56px;
 
     @include on-tablet {
       padding-bottom: 72px;
-
-      &:last-child {
-        padding-bottom: 0;
-      }
     }
-    
   }
 
   &__image {
@@ -95,7 +84,6 @@
 
     margin: 0;
     padding-top: 16px;
-   
 
     @include on-tablet {
       padding-bottom: 0;

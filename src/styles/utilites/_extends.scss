@@ -59,14 +59,16 @@
   letter-spacing: 0;
   color: $white;
 }
+
 // ASIDE
-  %aside-link {
-    @extend %cta-link;
-    
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 700;
-  }
+
+%aside-link {
+  @extend %cta-link;
+
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+}
 //
 
 // description
@@ -169,7 +171,7 @@
   font-size: 13px;
   line-height: 100%;
   letter-spacing: 0;
-  color: $btn-color;
+  color: var(--button-color);
   text-transform: uppercase;
 }
 

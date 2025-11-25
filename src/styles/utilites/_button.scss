@@ -5,10 +5,11 @@
   width: 100%;
   padding: 0;
   height: 50px;
-  background-color: $btn-color;
+  background-color: var(--button-color);
   border-radius: 8px;
   border: none;
   transition: all 0.3s ease;
+
   cursor: pointer;
 
   &:hover {

@@ -1,14 +1,14 @@
-.services { 
+.services {
   @include content-padding-inline;
+
   margin-top: 120px;
 
   @include on-tablet {
     margin-top: 148px;
   }
-  
+
   @include on-desktop {
     padding-top: 130px;
-   
   }
 
   &__container {
@@ -20,10 +20,9 @@
     @include on-desktop {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-     
     }
   }
-  
+
   /* ---------- TOP BLOCK (TITLE + DESCRIPTION) ---------- */
   &__top {
     padding-bottom: 48px;
@@ -40,9 +39,13 @@
     }
   }
 
-  &__name { @extend %services-name; }
-  &__title { 
-    @extend %services-title; 
+  &__name {
+    @extend %services-name;
+  }
+
+  &__title {
+    @extend %services-title;
+
     padding-bottom: 24px;
     padding-top: 16px;
     margin: 0;
@@ -50,6 +53,7 @@
 
   &__description {
     @extend %services-description;
+
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -87,25 +91,40 @@
 
       @include on-desktop {
         width: 214px;
-       
       }
 
       /* ---- TABLET: 6 колонок ---- */
-      &--first  { grid-column: 1 / 4; }
-      &--second { grid-column: 4 / 7; transform: translateY(-50%);}
-      &--third  { grid-column: 1 / 4; }
-      &--fourth { grid-column: 4 / 7;; transform: translateY(-50%);}
+      &--first {
+        grid-column: 1 / 4;
+      }
+      &--second {
+        grid-column: 4 / 7;
+        transform: translateY(-50%);
+      }
+      &--third {
+        grid-column: 1 / 4;
+      }
+      &--fourth {
+        grid-column: 4 / 7;
+        transform: translateY(-50%);
+      }
     }
 
     @include on-desktop {
       /* ---- DESKTOP: всередині 6-колонного блоку ---- */
-      &--first  { grid-column: 1 / 4; }
-      &--second { grid-column: 4 / 7; }
-      &--third  { grid-column: 1 / 4; }
-      &--fourth { grid-column: 4 / 7;  }
+      &--first {
+        grid-column: 1 / 4;
+      }
+      &--second {
+        grid-column: 4 / 7;
+      }
+      &--third {
+        grid-column: 1 / 4;
+      }
+      &--fourth {
+        grid-column: 4 / 7;
+      }
     }
-
-     
 
     &--container {
       padding: 32px;
@@ -123,9 +142,13 @@
       margin-bottom: 24px;
     }
 
-    &-number { @extend %services-number; }
-    &-text { 
+    &-number {
+      @extend %services-number;
+    }
+
+    &-text {
       @extend %services-text;
+
       max-width: 200px;
       padding-bottom: 32px;
     }
@@ -142,7 +165,7 @@
       width: 40px;
       height: 40px;
       border-radius: 50%;
-      background-color: blue;
+      background-color: var(--button-color);
       display: flex;
       justify-content: center;
       align-items: center;

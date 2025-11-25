@@ -9,7 +9,6 @@
 
   &--menu {
     background-image: url('../images/header/menu.png');
-  
 
     @include on-tablet {
       margin-right: 300px;
@@ -20,14 +19,14 @@
     }
   }
 
-    &__aside {
+  &__aside {
     width: 28px;
     height: 28px;
     cursor: pointer;
 
     &:hover {
-          box-shadow:  4px 1px 7px 0px rgba(230, 228, 228, 0.293);
-          transition: 0.3s;
+      box-shadow: 4px 1px 7px 0px rgba(230, 228, 228, 0.293);
+      transition: 0.3s;
     }
   }
 
@@ -65,7 +64,4 @@
       }
     }
   }
-
-
-
 }
