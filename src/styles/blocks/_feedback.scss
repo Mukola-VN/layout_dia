@@ -7,8 +7,10 @@
     margin-top: 148px;
   }
 
-  &__section--name {
+  &__name {
     @extend %feedback-section-name;
+
+     padding-bottom: 4px;
   }
 
   &__title {
@@ -28,9 +30,9 @@
 
   &__container {
     display: flex;
-    align-items: center;
     flex-direction: column;
     gap: 24px;
+    align-items: center;
 
     @include on-desktop {
       display: grid;
@@ -42,10 +44,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    border-radius: 16px;
+
     width: 280px;
     height: 456px;
+    border-radius: 16px;
+
+    text-align: center;
+
     background-color: $white;
 
     @include on-tablet {
@@ -72,14 +77,15 @@
 
   &__image {
     display: block;
+
     width: 196px;
     height: 196px;
     margin-top: 32px;
     margin-bottom: 24px;
 
-    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
 
     @include on-tablet {
       width: 250px;
@@ -103,29 +109,22 @@
     width: 24px;
     height: 24px;
 
-    background-size: contain;
+    background-image: url(../images/icon/icon-feedback.png);
     background-repeat: no-repeat;
     background-position: center;
-
-    background-image: url(../images/icon/icon-feedback.png);
+    background-size: contain;
   }
 
   &__description {
     @extend %feedback-description;
 
+    max-width: 196px;
     padding-top: 8px;
     padding-bottom: 16px;
-    max-width: 196px;
 
     @include on-tablet {
       max-width: 362px;
     }
-  }
-
-  &__name {
-    @extend %feedback-name;
-
-    padding-bottom: 4px;
   }
 
   &__job {

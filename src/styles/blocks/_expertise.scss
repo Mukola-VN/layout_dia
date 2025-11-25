@@ -6,10 +6,10 @@
   align-items: center;
 
   margin: 0 auto;
-
-  border-radius: 30px;
-  background-color: $white;
   margin-top: 192px;
+  border-radius: 30px;
+
+  background-color: $white;
 
   @include on-tablet {
     margin-top: 148px;
@@ -18,13 +18,13 @@
   &__title {
     @extend %expertise-title;
 
-    padding-top: 72px;
     max-width: 280px;
     margin: 0;
+    padding-top: 72px;
 
     @include on-tablet {
-      padding-top: 128px;
       max-width: 558;
+      padding-top: 128px;
     }
   }
 
@@ -37,8 +37,8 @@
 
     @include on-desktop {
       display: grid;
-      gap: 137px;
       grid-template-columns: repeat(3, 1fr);
+      gap: 137px;
     }
   }
 
@@ -46,8 +46,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+
     padding-bottom: 56px;
+
+    text-align: center;
 
     @include on-tablet {
       padding-bottom: 72px;
@@ -57,8 +59,8 @@
   &__image {
     width: 166px;
     height: 166px;
-    background-size: contain;
     background-repeat: no-repeat;
+    background-size: contain;
 
     &--branding {
       background-image: url(../images/expertise/branding-img.png);
@@ -86,8 +88,8 @@
     padding-top: 16px;
 
     @include on-tablet {
-      padding-bottom: 0;
       max-width: 362px;
+      padding-bottom: 0;
     }
   }
 }

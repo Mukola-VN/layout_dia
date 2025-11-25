@@ -1,13 +1,13 @@
 .footer {
   @include content-padding-inline;
 
+  height: auto;
   margin-top: 120px;
-
   border-top-left-radius: 1px;
   border-top-right-radius: 16px;
-  height: auto;
 
   background-color: var(--bg-color);
+
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
@@ -22,11 +22,11 @@
     @include on-tablet {
       padding-top: 120px;
     }
-    @include on-desktop {
-      padding-top: 180px;
 
+    @include on-desktop {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
+      padding-top: 180px;
     }
   }
 
@@ -47,22 +47,24 @@
   }
 
   &__form {
-    padding-top: 48px;
-    gap: 40px;
     display: flex;
     flex-direction: column;
+    gap: 40px;
+    padding-top: 48px;
 
     &-input,
     &-textarea {
-      background-color: var(--text-color);
+      resize: none;
 
+      padding-bottom: 16px;
       border: none;
       border-bottom: 1px solid #fff;
-      outline: none;
-      padding-bottom: 16px;
-      transition: all 0.3s ease;
+
       opacity: 50%;
-      resize: none;
+      background-color: var(--text-color);
+      outline: none;
+
+      transition: all 0.3s ease;
 
       &::placeholder {
         @extend %footer-form-text;
@@ -72,34 +74,36 @@
 
       &:focus {
         border-bottom-color: #144ed4;
-        color: #fff;
-        opacity: 100%;
+
         font-size: 16px;
+        color: #fff;
+
+        opacity: 100%;
         background-color: transparent;
       }
     }
   }
 
   &__contacts {
-    padding-top: 80px;
     display: flex;
     flex-direction: column;
     align-items: start;
+    padding-top: 80px;
 
     @include on-tablet {
       padding-top: 120px;
     }
 
     @include on-desktop {
-      padding-top: 0;
       grid-column: 8/13;
+      padding-top: 0;
     }
 
     &-title {
       @extend %footer-contact-title;
 
-      padding-bottom: 48px;
       margin: 0;
+      padding-bottom: 48px;
 
       @include on-tablet {
         padding-bottom: 56px;
@@ -160,9 +164,9 @@
 
     @include on-desktop {
       display: grid;
+      grid-column: 1 / 13;
       grid-template-columns: repeat(12, 1fr);
       align-items: center;
-      grid-column: 1 / 13;
 
       padding-block: 104px 80px;
     }
@@ -197,16 +201,16 @@
     &-list {
       display: flex;
       flex-direction: column;
-      align-items: start;
-      list-style: none;
-
       gap: 24px;
-      padding: 0;
+      align-items: start;
+
       margin: 0;
+      padding: 0;
+
+      list-style: none;
 
       @include on-tablet {
         flex-direction: row;
-
         gap: 40px;
       }
 

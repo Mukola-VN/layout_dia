@@ -1,10 +1,10 @@
 %h-1 {
   font-family: Poppins, sans-serif;
-  font-weight: 600;
   font-size: 52px;
+  font-weight: 600;
   line-height: 120%;
-  letter-spacing: -2px;
   color: $white;
+  letter-spacing: -2px;
 
   @include on-tablet {
     font-size: 64px;
@@ -15,59 +15,59 @@
 %cta-link {
   @extend %h-1;
 
-  font-weight: 700;
   font-size: 13px;
+  font-weight: 700;
   line-height: 150%;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  text-decoration: none;
   color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 %subtitle {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
   font-size: 18px;
+  font-weight: 400;
   line-height: 150%;
   color: $white;
 }
 
 %button-text {
   font-family: Poppins, sans-serif;
-  font-weight: 600;
   font-size: 15px;
+  font-weight: 600;
   line-height: 100%;
-  letter-spacing: 0;
   color: $white;
+  letter-spacing: 0;
 }
 
 %intro-title {
   @extend %button-text;
 
-  font-weight: 700;
   font-size: 13px;
+  font-weight: 700;
   line-height: 100%;
-  letter-spacing: 3px;
   text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 %intro-text {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   line-height: 140%;
-  letter-spacing: 0;
   color: $white;
+  letter-spacing: 0;
 }
 
-// ASIDE
+
 
 %aside-link {
   @extend %cta-link;
 
-  text-decoration: none;
   font-size: 15px;
   font-weight: 700;
+  text-decoration: none;
 }
 
 %description-title {
@@ -75,9 +75,9 @@
 
   font-size: 32px;
   line-height: 150%;
-  letter-spacing: 0;
-  text-align: center;
   color: $h-color;
+  text-align: center;
+  letter-spacing: 0;
 }
 
 %description-text {
@@ -91,16 +91,16 @@
   }
 }
 
-// Our expertise
+
 
 %expertise-title {
   @extend %h-1;
 
   font-size: 44px;
   line-height: 120%;
-  letter-spacing: 0;
-  text-align: center;
   color: $h-color;
+  text-align: center;
+  letter-spacing: 0;
 
   @include on-tablet {
     font-size: 52px;
@@ -113,8 +113,8 @@
 
   font-size: 20px;
   line-height: 140%;
-  letter-spacing: 0;
   color: $h-color;
+  letter-spacing: 0;
 }
 
 %expertise-text {
@@ -123,27 +123,27 @@
   color: $text-color;
 }
 
-// services
+
 %services-name {
   @extend %h-1;
 
-  font-weight: 700;
   font-size: 13px;
+  font-weight: 700;
   line-height: 100%;
-  letter-spacing: 3px;
+  color: $services-name-color;
   text-align: left;
   text-transform: uppercase;
-  color: $services-name-color;
+  letter-spacing: 3px;
 }
 
 %services-title {
   @extend %h-1;
 
-  font-weight: 600;
   font-size: 32px;
+  font-weight: 600;
   line-height: 130%;
-  letter-spacing: 0;
   color: $h-color;
+  letter-spacing: 0;
 }
 
 %services-description {
@@ -156,11 +156,11 @@
 %services-box-text {
   @extend %intro-text;
 
-  font-weight: 600;
   font-size: 13px;
+  font-weight: 600;
   line-height: 150%;
-  letter-spacing: 0;
   color: $text-color;
+  letter-spacing: 0;
 }
 
 %services-number {
@@ -168,16 +168,16 @@
 
   font-size: 13px;
   line-height: 100%;
-  letter-spacing: 0;
   color: var(--button-color);
   text-transform: uppercase;
+  letter-spacing: 0;
 }
 
 %services-text {
   @extend %intro-text;
 
-  font-weight: 600;
   font-size: 13px;
+  font-weight: 600;
   line-height: 150%;
   color: $text-color;
 }
@@ -187,34 +187,34 @@
 
   font-size: 15;
   line-height: 100%;
-  letter-spacing: 0;
   color: $services-btn;
+  letter-spacing: 0;
 }
 
-// Feedback
+
 %feedback-section-name {
   font-family: Poppins, sans-serif;
-  font-weight: 700;
   font-size: 13px;
+  font-weight: 700;
   line-height: 100%;
-  letter-spacing: 3px;
-  text-transform: uppercase;
   color: $feedback-name-color;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 %feedback-title {
   font-family: Poppins, sans-serif;
-  font-weight: 600;
   font-size: 32px;
+  font-weight: 600;
   line-height: 150%;
-  letter-spacing: 0;
   color: $feedback-title-color;
+  letter-spacing: 0;
 }
 
 %feedback-description {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
   font-size: 13px;
+  font-weight: 600;
   line-height: 150%;
   color: $feedback-text-color;
 }
@@ -231,14 +231,14 @@
   color: $feedback-name-color;
 }
 
-// vision
+
 %vision-title {
   @extend %h-1;
 
   font-size: 44px;
-  letter-spacing: 0;
   color: $vision-title-color;
   text-align: center;
+  letter-spacing: 0;
 
   @include on-tablet {
     font-size: 52px;
@@ -247,8 +247,8 @@
 
 %vision-text {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
   font-size: 22px;
+  font-weight: 600;
   line-height: 150%;
   color: $vision-text-color;
   text-align: center;
@@ -258,14 +258,13 @@
   }
 }
 
-// Footer
 %footer-h3 {
   font-family: Poppins, sans-serif;
-  font-weight: 600;
   font-size: 32px;
+  font-weight: 600;
   line-height: 130%;
-  letter-spacing: 0;
   color: $white;
+  letter-spacing: 0;
 
   @include on-tablet {
     line-height: 150%;
@@ -283,11 +282,11 @@
 %footer-contact-title {
   @extend %footer-h3;
 
-  font-weight: 600;
   font-size: 32px;
+  font-weight: 600;
   line-height: 150%;
-  letter-spacing: 0;
   text-transform: uppercase;
+  letter-spacing: 0;
 }
 
 %footer-contact-label {
@@ -296,18 +295,18 @@
   font-size: 13px;
   font-weight: 700;
   line-height: 100%;
-  letter-spacing: 3px;
   text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 %footer-contact-link {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
   font-size: 24px;
+  font-weight: 600;
   line-height: 150%;
-  letter-spacing: 0;
-  text-decoration: none;
   color: $white;
+  text-decoration: none;
+  letter-spacing: 0;
 }
 
 %footer-socials {
@@ -316,8 +315,8 @@
   font-size: 13px;
   font-weight: 700;
   line-height: 100%;
-  letter-spacing: 3px;
   color: $white;
+  letter-spacing: 3px;
 }
 
 %footer-navigation {

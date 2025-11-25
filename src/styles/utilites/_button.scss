@@ -1,16 +1,19 @@
 .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-  height: 50px;
-  background-color: var(--button-color);
-  border-radius: 8px;
-  border: none;
-  transition: all 0.3s ease;
-
   cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+
+  background-color: var(--button-color);
+
+  transition: all 0.3s ease;
 
   &:hover {
     transform: scale(1.02);

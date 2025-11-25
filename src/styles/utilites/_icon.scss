@@ -1,11 +1,14 @@
 .icon {
+  cursor: pointer;
+
   display: block;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+
   width: 24px;
   height: 24px;
-  cursor: pointer;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 
   &--menu {
     background-image: url('../images/header/menu.png');
@@ -20,9 +23,9 @@
   }
 
   &__aside {
+    cursor: pointer;
     width: 28px;
     height: 28px;
-    cursor: pointer;
 
     &:hover {
       box-shadow: 4px 1px 7px 0 rgba(230, 228, 228, 0.29);
@@ -38,9 +41,8 @@
       background-image: url('../images/icon/facebook-icon.png');
 
       &:hover {
-        background-image: url('../images/icon/facebook-hover.png');
-
         transform: scaleX(1.1);
+        background-image: url('../images/icon/facebook-hover.png');
       }
     }
 
@@ -48,9 +50,8 @@
       background-image: url('../images/icon/twitter-icon.png');
 
       &:hover {
-        background-image: url('../images/icon/twitter-hover.png');
-
         transform: scaleX(1.1);
+        background-image: url('../images/icon/twitter-hover.png');
       }
     }
 
@@ -58,9 +59,8 @@
       background-image: url('../images/icon/instagram-icon.png');
 
       &:hover {
-        background-image: url('../images/icon/instagram-hover.png');
-
         transform: scaleX(1.1);
+        background-image: url('../images/icon/instagram-hover.png');
       }
     }
   }
