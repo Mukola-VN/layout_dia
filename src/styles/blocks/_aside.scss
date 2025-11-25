@@ -49,8 +49,8 @@
     display: inline-block; // важливо, щоб underline мав ширину елемента
 
     transition: all 0.3s ease;
-    /* Плавний перехід від білого до м'якого фіолетового */
 
+    /* Плавний перехід від білого до м'якого фіолетового */
     background: linear-gradient(45deg, #fff 0%, #f3e5f5 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
