@@ -5,8 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dia</title>
+  <!-- Icons-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+  <!--Swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <!--Main Styles -->
   <link rel="stylesheet" href="./styles/main.scss" />
+ 
 </head>
 
 <body class="page__body" id="page__body">
@@ -41,30 +46,36 @@
           <a href="#menu" class="icon icon--menu" aria-label="Open menu"></a>
         </div>
 
+        <button class="header__theme-switch icon-switch" id="themeToggle" aria-label="Toggle theme">
+          <i class="ri-cloud-fill"></i>
+        </button>
+
         <div class="header__cta">
           <a href="#" class="header__cta-link">
             HIRE US
           </a>
         </div>
-
       </div>
+      
+    </div>
 
-      <div class="header__bottom">
-        <h1 class="header__bottom-title">Strategic Agency</h1>
-        <span class="header__bottom-subtitle">
-          We believe in the power of bold ideas that can solve business
-          challenges.
-        </span>
-        <!-- кнопка -->
+    <div class="header__bottom">
+      <h1 class="header__bottom-title">Strategic Agency</h1>
+      <span class="header__bottom-subtitle">
+        We believe in the power of bold ideas that can solve business
+        challenges.
+      </span>
+      <!-- кнопка -->
 
-        <button class="button header__button">
-          <span class="button-text">Learn more</span>
-        </button>
-        
-      </div>
+      <button class="button header__button">
+        <span class="button-text">Learn more</span>
+      </button>
+
+    </div>
     </div>
     <!-- Swiper -->
     <div class="header__swiper swiper" dir="rtl">
+
       <div class="header__swiper-wrapper swiper-wrapper">
         <div class="header__swiper-slide swiper-slide">
           <img src="./images/header/header-slide-1.png" alt="Slide 1" class="header__swiper-image" />
@@ -79,22 +90,24 @@
         </div>
       </div>
 
-      <div class="header__swiper-nav">
-        <div class="swiper-button-next">
-          <img src="./images/header/header-arrow-right.png" alt="left" class="swiper-button-img" />
+      <div class="header__intro">
+        <div class="header__intro--buttons">
+          <div class="swiper-button-next">
+            <img src="./images/header/header-arrow-left.png" alt="left" class="swiper-button-img" />
+          </div>
+
+          <div class="swiper-button-prev">
+            <img src="./images/header/header-arrow-right.png" alt="right" class="swiper-button-img" />
+          </div>
+
         </div>
 
-        <div class="swiper-button-prev">
-          <img src="./images/header/header-arrow-left.png" alt="right" class="swiper-button-img" />
+        <div class="header__intro-title">INTRO</div>
+        <div class="header__intro-text">
+          By the same illusion which lifts the horizon.
         </div>
       </div>
-    </div>
 
-    <div class="header__intro">
-      <div class="header__intro-title">INTRO</div>
-      <div class="header__intro-text">
-        By the same illusion which lifts the horizon.
-      </div>
     </div>
   </header>
 
@@ -309,7 +322,7 @@
 
       <!-- First card -->
       <div class="feedback__container">
-        <div class="feedback__card">
+        <div class="feedback__card feedback__card-first">
           <div class="feedback__image feedback__image-first"></div>
           <div class="feedback__icon"></div>
           <div class="feedback__description">
@@ -321,7 +334,7 @@
         </div>
 
         <!-- Second card -->
-        <div class="feedback__card">
+        <div class="feedback__card feedback__card-second">
           <div class="feedback__image feedback__image-second"></div>
           <div class="feedback__icon"></div>
           <div class="feedback__description">
@@ -333,7 +346,7 @@
         </div>
 
         <!-- Third card -->
-        <div class="feedback__card">
+        <div class="feedback__card feedback__card-third">
           <div class="feedback__image feedback__image-third"></div>
           <div class="feedback__icon">
             <div class="feedback__icon-img"></div>
@@ -401,17 +414,17 @@
             </a>
           </address>
         </div>
-      </div>
 
-      <div class="footer__social">
-        <h3 class="footer__social-title">our socials</h3>
-        <div class="footer__social-icon">
-          <a href="https://www.facebook.com" class="icon icon__footer--facebook" aria-label="Facebook" target="_blank"
-            rel="noopener noreferrer"></a>
-          <a href="https://www.twitter.com" class="icon icon__footer--twitter" aria-label="Twitter" target="_blank"
-            rel="noopener noreferrer"></a>
-          <a href="https://www.instagram.com" class="icon icon__footer--instagram" aria-label="Instagram"
-            target="_blank" rel="noopener noreferrer"></a>
+        <div class="footer__social">
+          <h3 class="footer__social-title">our socials</h3>
+          <div class="footer__social-icon">
+            <a href="https://www.facebook.com" class="icon icon__footer--facebook" aria-label="Facebook" target="_blank"
+              rel="noopener noreferrer"></a>
+            <a href="https://www.twitter.com" class="icon icon__footer--twitter" aria-label="Twitter" target="_blank"
+              rel="noopener noreferrer"></a>
+            <a href="https://www.instagram.com" class="icon icon__footer--instagram" aria-label="Instagram"
+              target="_blank" rel="noopener noreferrer"></a>
+          </div>
         </div>
       </div>
 
@@ -452,6 +465,7 @@
           </ul>
         </nav>
       </div>
+
     </div>
   </footer>
 

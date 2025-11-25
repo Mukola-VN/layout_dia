@@ -20,12 +20,22 @@
     @include on-tablet {
       margin-bottom: 56px;
     }
+
+    @include on-desktop {
+      margin-bottom: 85px;
+    }
   }
 
   &__container {
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 24px;
+
+    @include on-desktop {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+    }
   }
 
   &__card {
@@ -41,6 +51,23 @@
     @include on-tablet {
       width: 558px;
       height: auto;
+    }
+
+    @include on-desktop {
+      width: 292px;
+      height: 456px;
+
+    }
+    &-first {
+      grid-column: 1 / 5;
+    }
+
+    &-second {
+      grid-column: 5/9;
+    }
+
+    &-third {
+      grid-column: 9/13;
     }
   }
 

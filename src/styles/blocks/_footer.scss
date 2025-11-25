@@ -12,11 +12,26 @@
     margin: 0;
   }
 
-  &__top {
+  &__container {
     padding-top: 72px;
 
-    @include on-tablet {
-      padding-top: 180px;
+  @include on-tablet {
+    padding-top: 120px;
+  }
+  @include on-desktop {
+    padding-top: 180px;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+}    
+    
+  }
+
+  &__top {
+   
+    @include on-desktop {
+      grid-column: 1/7;
     }
 
     &-title {
@@ -72,6 +87,11 @@
 
     @include on-tablet {
       padding-top: 120px;
+    }
+
+    @include on-desktop {
+      padding-top: 0;
+      grid-column: 8/13;
     }
 
     &-title {
@@ -136,12 +156,29 @@
     @include on-tablet {
       padding-block: 139px 80px;
     }
+
+    @include on-desktop {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    grid-column: 1 / 13;
+
+    padding-block: 104px 80px;
+    }
   }
 
   &__logo {
-    &-img {
       width: 46px;
       height: 28px;
+      object-fit: contain;
+
+     @include on-desktop {
+    grid-column: 1 / 3;
+   
+  }
+
+    &-img {
+      width: 100%;
     }
   }
 
@@ -151,6 +188,11 @@
     @include on-tablet {
       padding-top: 24px;
     }
+
+    @include on-desktop {
+    grid-column: 3 / 13; 
+    padding: 0;
+  }
 
     &-list {
       display: flex;
@@ -167,10 +209,17 @@
 
         gap: 40px;
       }
+
+      @include on-desktop {
+        flex-direction: row;
+        align-items: center;   
+        justify-content: flex-end;
+     }
     }
 
     &-link {
       @extend %footer-navigation;
+       
     }
   }
 }

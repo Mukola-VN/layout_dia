@@ -5,7 +5,7 @@
     
    @include on-desktop {
       display: grid;
-      position: relative;
+     position: relative;
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: repeat(1, 1fr);
       height: 800px;
@@ -25,7 +25,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+   
     padding-top: 20px;
     padding-bottom: 48px;
 
@@ -35,6 +35,7 @@
 
     @include on-desktop {
       padding-top: 48px;
+      padding-bottom: 0;
     
     }
   }
@@ -42,6 +43,10 @@
   &__logo {
     margin-right: 32px;
     
+    @include on-desktop {
+      margin-right: 0;
+    }
+
     &-img {
       width: 46px;
       height: 28px;
@@ -64,8 +69,8 @@
      
       gap: 48px;
       margin: 0;
-      padding-left: 136px;
-      padding-right: 10px;
+      // padding-left: 136px;
+      // padding-right: 48px;
     }
 
     &__item {
@@ -84,6 +89,10 @@
     align-items: center;
     align-items: flex-start;
     white-space: nowrap;
+
+    @include on-desktop {
+      margin-right: 54px;
+    }
 
     &-link {
       @extend %cta-link;
@@ -167,13 +176,20 @@
     z-index: 0;
 
     @include on-desktop {
-      grid-column: 7/13;
+      grid-column: 8/13;
       width: 502px;
       height: 680px;
+      border-top-left-radius: 30px;
+      border-bottom-right-radius: 30px;
       align-self: end;
     }
 
+    @include on-design {
+      width: 100%;
+    }
+
     &-wrapper {
+       position: relative;
       display: flex;
       width: 100%;
       height: 390px;
@@ -181,82 +197,106 @@
 
       @include on-desktop {
         height: 100%;
+      
       }
     }
 
-    &-nav {
-      display: flex;
-      position: absolute;
-      bottom: 126px;
-      left: 46px;
-      transform: translateX(-50%);
-      gap: 16px;
-      z-index: 10;
-    }
-
+    
     &-slide {
       flex: 0 0 100%;
       width: 100%;
       height: 100%;
     }
-
+    
     &-image {
-      border-radius: 30px;
+      
       width: 100%;
       height: 100%;
-      object-fit: contain;
+      object-fit: cover;
       object-position: center;
-    }
-
-    @include on-desktop {
-     height: 680px;
+      
+      @include on-desktop {
+        position: relative;
+        z-index: 0;
+       
+        height: 680px;
+        border-radius: 0;
+        border-top-left-radius: 30px;
+      }
     }
   }
 
   .swiper-button-prev,
   .swiper-button-next {
-    position: static;
-
+    display: flex;
     width: 32px;
     height: 32px;
     cursor: pointer;
   }
 
   .swiper-button-img {
-    display: block;
+  
     width: 100%;
     height: 100%;
-    object-fit: contain;
-
-    margin-left: 20px;
-
-    @include on-tablet {
-      margin-left: 70px;
-    }
-    
+    object-fit: contain; 
   }
 
   &__intro {
-    transform: translateY(-124px);
-    position: absolute;
-    z-index: 10;
-    padding-inline: 20px;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  z-index: 1000;
+  align-items: start;
+   
 
     @include on-tablet {
       padding-inline: 41px;
     }
 
+    @include on-desktop {
+    bottom: 60px;
+    right: 60px;
+    }
+
+
     &-title {
       @extend %intro-title;
-
-      padding-bottom: 8px;
-      padding-top: 16px;
+    
+      text-align: start
     }
 
     &-text {
       @extend %intro-text;
 
       padding-bottom: 24px;
+
+      @include on-tablet {
+        max-width: 260px;
+      }
+
+      @include on-desktop {
+        min-width: 266px;
+      }
     }
   }
+
+  &__theme-switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 50px;
+    height: 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: grey;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 8px;
+    
+    &:hover {
+      opacity: .7;
+    }
+  }
+
 }

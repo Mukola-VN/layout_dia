@@ -1,3 +1,21 @@
+// //light-theme 
+//   $color-bg-light: #2c2c2c;
+//   $color-text-light: #008AFF;
+
+// //$dark-theme 
+//   $color-bg-dark: #008AFF;
+//   $color-text-dark: #2c2c2c;
+
+:root {
+  --bg-color: #2c2c2c;
+  --text-color: #008AFF;
+}
+
+.dark-theme {
+  --bg-color: #008AFF;
+  --text-color: #2c2c2c;
+}
+
 // COLORS
 $page-color: #e9f0ff;
 $white: #fff;

@@ -9,10 +9,10 @@
 
   &--menu {
     background-image: url('../images/header/menu.png');
-    margin-right: 111px;
+  
 
     @include on-tablet {
-      margin-right: 389px;
+      margin-right: 300px;
     }
 
     @include on-desktop {
@@ -32,19 +32,37 @@
   }
 
   &__footer {
-    width: 32px;
-    height: 32px;
-
+    width: 24px;
+    height: 24px;
+    transition: 0.3s;
     &--facebook {
       background-image: url('../images/icon/facebook-icon.png');
+
+      &:hover {
+        background-image: url('../images/icon/facebook-hover.png');
+
+        transform: scaleX(1.1);
+      }
     }
 
     &--twitter {
       background-image: url('../images/icon/twitter-icon.png');
+
+      &:hover {
+        background-image: url('../images/icon/twitter-hover.png');
+
+        transform: scaleX(1.1);
+      }
     }
 
     &--instagram {
       background-image: url('../images/icon/instagram-icon.png');
+
+      &:hover {
+        background-image: url('../images/icon/instagram-hover.png');
+
+        transform: scaleX(1.1);
+      }
     }
   }
 

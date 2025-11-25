@@ -29,7 +29,11 @@
     padding-bottom: 24px;
 
     @include on-tablet {
-      width: 558px;
+      max-width: 558px;
+    }
+
+    @include on-desktop {
+      max-width: 754px
     }
   }
 
@@ -41,6 +45,10 @@
 
     @include on-tablet {
       padding-bottom: 64px;
+    }
+
+    @include on-desktop {
+      max-width:754px ;
     }
   }
 }

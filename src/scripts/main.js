@@ -1,4 +1,7 @@
+
 'use strict';
+
+
 const swiper = new Swiper('.header__swiper', {
   loop: true,
   direction: 'horizontal',
@@ -6,8 +9,8 @@ const swiper = new Swiper('.header__swiper', {
   rtl: true,
 
   navigation: {
-    prevEl: '.swiper-button-next',
-    nextEl: '.swiper-button-prev',
+    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next',
   },
 });
 
@@ -23,3 +26,15 @@ closeBtn.addEventListener("click", () => {
   menu.classList.remove("active");
 });
 
+const btn = document.getElementById('themeToggle');
+const icon = btn.querySelector('i');
+
+btn.addEventListener('click', () => {
+  document.body.classList.toggle('dark-theme');
+
+  if (document.body.classList.contains('dark-theme')) {
+    icon.className = "ri-moon-fill";
+  } else {
+    icon.className = "ri-cloud-fill";
+  }
+});;
