@@ -1,13 +1,13 @@
-.page {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-  box-sizing: border-box;
-}
-
 body {
-  background:$page-color;
+  background: $page-color;
   margin: 0;
   padding: 0;
+  overflow: hidden auto;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html:target {

@@ -23,7 +23,6 @@
     }
   }
 
-  
   &__top {
     padding-bottom: 48px;
 
@@ -59,7 +58,6 @@
     gap: 10px;
   }
 
- 
   &__bottom {
     display: flex;
     flex-direction: column;
@@ -77,14 +75,14 @@
     }
   }
 
-
   &__card {
-    max-width: 280px;
     height: 264px;
     border-radius: 16px;
-
     background-color: $white;
     box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
+
+    transition: transform 0.3s ease;
+    cursor: pointer;
 
     @include on-tablet {
       width: 264px;
@@ -94,9 +92,12 @@
         width: 214px;
       }
 
-   
       &--first {
         grid-column: 1 / 4;
+
+        &:hover {
+          transform: scale(1.03);
+        }
       }
       &--second {
         transform: translateY(-50%);
@@ -104,6 +105,10 @@
       }
       &--third {
         grid-column: 1 / 4;
+
+        &:hover {
+          transform: scale(1.03);
+        }
       }
       &--fourth {
         transform: translateY(-50%);
@@ -112,7 +117,6 @@
     }
 
     @include on-desktop {
-    
       &--first {
         grid-column: 1 / 4;
       }
@@ -128,7 +132,6 @@
     }
 
     &--container {
-      box-sizing: border-box;
       padding: 32px;
     }
 
@@ -157,7 +160,6 @@
     }
   }
 
-  
   &__btn {
     display: flex;
     gap: 16px;

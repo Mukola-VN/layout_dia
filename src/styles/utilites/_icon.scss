@@ -13,6 +13,11 @@
   &--menu {
     background-image: url('../images/header/menu.png');
 
+    &:hover {
+      color: rgb(224, 220, 220);
+      opacity: 0.5;
+    }
+
     @include on-tablet {
       margin-right: 300px;
     }

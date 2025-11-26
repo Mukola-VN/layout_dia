@@ -8,8 +8,8 @@ const swiper = new Swiper('.header__swiper', {
   rtl: true,
 
   navigation: {
-    prevEl: '.swiper-button-next',
     nextEl: '.swiper-button-prev',
+    prevEl: '.swiper-button-next',
   },
 });
 
