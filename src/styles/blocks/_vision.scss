@@ -1,14 +1,15 @@
 .vision {
-  @include content-padding-inline;
+  // @include content-padding-inline;
 
-  box-sizing: border-box;
+  
   margin: 0;
   background-color: #fff;
 
   @include on-tablet {
-    background-image: url('../images/header/Shapes.png');
-    background-position: center;
+    background-image: url('../images/header/Shapes 1024px.webp');
+    background-position: center ;
     background-size: cover;
+    background-repeat: no-repeat;
   }
 
   &__container {

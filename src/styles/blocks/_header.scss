@@ -32,6 +32,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 
     width: 100%;
     padding-top: 20px;
@@ -120,7 +121,7 @@
     height: 30px;
     border: none;
     border-radius: 15px;
-
+    padding: 0;
     background: var(--bg-button);
 
     @include on-desktop {
@@ -153,8 +154,6 @@
     display: block;
     align-items: center;
     white-space: nowrap;
-    margin-right: 54px;
-
     &-link {
       @extend %cta-link;
 
