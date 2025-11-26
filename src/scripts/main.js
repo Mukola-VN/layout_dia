@@ -47,46 +47,33 @@ menuLinks.forEach(link => {
 
 const themeToggle = document.getElementById('themeToggle');
 const slider = themeToggle.querySelector('.header__switch--slider');
-const icon = slider.querySelector('i');
 
-
-const MAX_MOVE = 20;
-
+const MAX_MOVE = 23;
 
 let isDragging = false;
 let startX = 0;
+let startPosition = 0;
 let currentX = 0;
-
-
-themeToggle.addEventListener('click', () => {
-
-  if (isDragging) return;
-
-  document.body.classList.toggle('dark-theme');
-  updateIcon();
-});
-
-
-
 
 slider.addEventListener('mousedown', (e) => {
   isDragging = true;
-  startX = e.clientX;
+
+  startX = e.clientX;        
+  startPosition = currentX;  
+
   slider.style.transition = 'none';
 });
-
 
 document.addEventListener('mousemove', (e) => {
   if (!isDragging) return;
 
   const dx = e.clientX - startX;
 
-
-  currentX = Math.max(0, Math.min(MAX_MOVE, dx));
+  
+  currentX = Math.max(0, Math.min(MAX_MOVE, startPosition + dx));
 
   slider.style.transform = `translateX(${currentX}px)`;
 });
-
 
 document.addEventListener('mouseup', () => {
   if (!isDragging) return;
@@ -94,27 +81,13 @@ document.addEventListener('mouseup', () => {
 
   slider.style.transition = '0.25s';
 
-
   if (currentX > MAX_MOVE / 2) {
     document.body.classList.add('dark-theme');
   } else {
     document.body.classList.remove('dark-theme');
   }
-
-  updateIcon();
 });
 
-
-
-function updateIcon() {
-  if (document.body.classList.contains('dark-theme')) {
-    icon.className = "ri-cloud-fill";
-    slider.style.transform = `translateX(${MAX_MOVE}px)`;
-  } else {
-    icon.className = "ri-moon-fill";
-    slider.style.transform = `translateX(0px)`;
-  }
-}
 
 
 

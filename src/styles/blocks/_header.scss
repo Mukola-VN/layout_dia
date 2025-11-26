@@ -44,7 +44,7 @@
     @include on-desktop {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-
+      justify-content: space-between;
       width: 100%;
       padding-top: 48px;
       padding-bottom: 0;
@@ -83,10 +83,14 @@
       justify-content: space-between;
 
       margin: 0;
+      padding-left: 100px;
       padding-right: 28px;
-      padding-left: 136px;
 
       white-space: nowrap;
+
+      @include on-desktop {
+        padding-right: 40px;
+      }
     }
 
     &-item {
@@ -120,7 +124,8 @@
     background: var(--bg-button);
 
     @include on-desktop {
-      margin-right: 15px;
+      padding: 0;
+      margin-right: 35px;
     }
 
     @include on-design {
@@ -140,9 +145,7 @@
 
       transition: 0.3s;
 
-      i {
-        color: var(--bg-color);
-      }
+     
     }
   }
 
@@ -150,6 +153,7 @@
     display: block;
     align-items: center;
     white-space: nowrap;
+    margin-right: 54px;
 
     &-link {
       @extend %cta-link;

@@ -215,9 +215,13 @@
 }
 
 %feedback-name {
-  @extend %feedback-description;
-
-  color: $feedback-title-color;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  line-height: 100%;
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $feedback-job-name-color;
 }
 
 %feedback-job {
