@@ -105,6 +105,17 @@ document.addEventListener('touchend', () => {
   }
 });
 
+const openMenuBtn = document.querySelector('.icon--menu');
+const closeMenuBtn = document.querySelector('#menu-close');
+// const menu = document.querySelector('.menu');
 
+openMenuBtn.addEventListener('click', (e) => {
+  e.preventDefault(); // щоб не стрибало по якірцю
+  menu.classList.add('active');
+  document.body.classList.add('no-scroll');
+});
 
-
+closeMenuBtn.addEventListener('click', () => {
+  menu.classList.remove('active');
+  document.body.classList.remove('no-scroll');
+});
