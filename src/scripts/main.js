@@ -107,7 +107,7 @@ document.addEventListener('touchend', () => {
 
 const openMenuBtn = document.querySelector('.icon--menu');
 const closeMenuBtn = document.querySelector('#menu-close');
-// const menu = document.querySelector('.menu');
+
 
 openMenuBtn.addEventListener('click', (e) => {
   e.preventDefault(); // щоб не стрибало по якірцю
@@ -118,4 +118,12 @@ openMenuBtn.addEventListener('click', (e) => {
 closeMenuBtn.addEventListener('click', () => {
   menu.classList.remove('active');
   document.body.classList.remove('no-scroll');
+});
+
+
+document.querySelectorAll('textarea').forEach(textarea => {
+  textarea.addEventListener('input', () => {
+    textarea.style.height = 'auto';
+    textarea.style.height = textarea.scrollHeight + '10px';
+  });
 });

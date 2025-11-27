@@ -55,6 +55,7 @@
     &-input,
     &-textarea {
       resize: none;
+      // overflow: hidden; 
 
       padding-bottom: 16px;
       border: none;
@@ -154,6 +155,7 @@
     &-title {
       @extend %footer-socials;
 
+      color:#969696;
       margin: 0;
       padding-bottom: 16px;
     }
@@ -192,6 +194,11 @@
 
     &-img {
       width: 100%;
+
+
+      &:hover {
+        opacity: 0.7;
+      }
     }
   }
 
@@ -232,6 +239,12 @@
 
     &-link {
       @extend %footer-navigation;
+
+
+
+      &:hover {
+        opacity: 0.7;
+      }
     }
   }
 }

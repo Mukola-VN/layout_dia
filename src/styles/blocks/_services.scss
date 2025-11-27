@@ -75,61 +75,76 @@
     }
   }
 
-  &__card {
+ &__card {
+  height: 264px;
+  border-radius: 16px;
+  background-color: $white;
+  box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
+  min-width: 100%;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  transform: translateY(0) scale(1);
+
+  @include on-tablet {
+    width: 264px;
     height: 264px;
-    border-radius: 16px;
-    background-color: $white;
-    box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
-    min-width: 100%;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-
-    @include on-tablet {
-      width: 264px;
-      height: 264px;
-
-      @include on-desktop {
-        width: 214px;
-      }
-
-      &--first {
-        grid-column: 1 / 4;
-
-        &:hover {
-          transform: scale(1.03);
-        }
-      }
-      &--second {
-        transform: translateY(-50%);
-        grid-column: 4 / 7;
-      }
-      &--third {
-        grid-column: 1 / 4;
-
-        &:hover {
-          transform: scale(1.03);
-        }
-      }
-      &--fourth {
-        transform: translateY(-50%);
-        grid-column: 4 / 7;
-      }
-    }
 
     @include on-desktop {
-      &--first {
-        grid-column: 1 / 4;
-      }
-      &--second {
-        grid-column: 4 / 7;
-      }
-      &--third {
-        grid-column: 1 / 4;
-      }
-      &--fourth {
-        grid-column: 4 / 7;
+      width: 214px;
+    }
+
+    &--first {
+      grid-column: 1 / 4;
+
+      &:hover {
+        transform: translateY(0) scale(1.03);
       }
     }
+
+    &--second {
+      transform: translateY(-50%) scale(1);
+      grid-column: 4 / 7;
+
+      &:hover {
+        transform: translateY(-50%) scale(1.03);
+      }
+    }
+
+    &--third {
+      grid-column: 1 / 4;
+
+      &:hover {
+        transform: translateY(0) scale(1.03);
+      }
+    }
+
+    &--fourth {
+      transform: translateY(-50%) scale(1);
+      grid-column: 4 / 7;
+
+      &:hover {
+        transform: translateY(-50%) scale(1.03);
+      }
+    }
+  }
+
+  @include on-desktop {
+    &--first {
+      grid-column: 1 / 4;
+    }
+
+    &--second {
+      grid-column: 4 / 7;
+    }
+
+    &--third {
+      grid-column: 1 / 4;
+    }
+
+    &--fourth {
+      grid-column: 4 / 7;
+    }
+  }
 
     &--container {
       padding: 32px;
