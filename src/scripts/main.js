@@ -124,6 +124,6 @@ closeMenuBtn.addEventListener('click', () => {
 document.querySelectorAll('textarea').forEach(textarea => {
   textarea.addEventListener('input', () => {
     textarea.style.height = 'auto';
-    textarea.style.height = textarea.scrollHeight + '10px';
+    textarea.style.height = textarea.scrollHeight;
   });
 });
